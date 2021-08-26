@@ -1,0 +1,45 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0px;
+}
+
+.container {
+    padding: 70px 0 70px 0;
+}
+
+p, li {
+    color: gold;
+    font-size: 14px;
+}
+
+/* Barra de navegação */
+
+header, .navbar {
+    background-color: #A34DA5;
+}
+
+#nav-container {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: gold;
+}
+
+.navbar-brand:hover {
+    color: gold;
+}
+
+#navbar-links a {
+    color: gold;
+}
+
+.navbar-expanded-lg .navbar-nav .nav-links {
+    padding: 1rem .8rem 1rem .8rem;
+}
