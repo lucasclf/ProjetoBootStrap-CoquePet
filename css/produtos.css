@@ -1,0 +1,15 @@
+#teste{
+    margin-top: 100px;
+    height: 90vh;
+    background-color: aqua;
+}
+
+aside {
+    margin-top: 100px;
+    height: 90vh;
+    background-color: blueviolet;
+}
+
+aside i {
+    margin-top: 30px;
+}

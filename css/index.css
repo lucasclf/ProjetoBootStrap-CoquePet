@@ -1,0 +1,155 @@
+/* Carrossel */
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+      height: 90vh;
+}
+  
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #F2F08A;
+    text-shadow: purple -1px -1px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #F2F08A;
+    text-shadow: purple -1px -1px;
+}
+
+.main-btn {
+    background-color: #46A65F;
+    color: #F2F08A;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #A6A456;
+    background-color: transparent;
+    border-color: #46A65F;
+}
+
+.carousel-indicators .active {
+    background-color: #46A65F;
+}
+
+/* Promoções */
+
+.promocao-titulo {
+    font-size: 17px;
+    color: #444;
+    font-weight: bold;
+    margin: 40px 0 60px 0;
+    text-align: center;
+}
+
+#produtosPromo img {
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+#servicoPromo img {
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+@media(max-width: 768px) {
+    /* geral */
+    .container {
+      padding: 20px 0;
+    }
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+      height: auto;
+    }
+    #mainSlider .carousel-caption h2 {
+      font-size: 28px;
+    }
+    #mainSlider .carousel-caption p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .carousel-caption {
+      left: 10%;
+      right: 10%;
+    }
+
+    /* Promoções */
+
+    #area-promocao img{
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 426px) {
+    
+  .main-title::after {
+    width: 35%;
+    left: 32.5%;
+}
+
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+      margin-top: 58px;
+    }
+
+    #mainSlider .carousel-caption {
+      top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+
+    #mainSlider .carousel-caption p {
+      display: none;
+    }
+
+    .carousel-caption {
+      left: 10%;
+      right: 10%;
+    }
+
+    .main-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* Promoções */
+
+
+    #produtosPromo img {
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 0%;
+    }
+    
+    #servicoPromo img {
+        border-bottom-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        border-top-right-radius: 0%;
+    }
+
+    .main-title::after {
+        content: "";
+        border-top: 2px solid #333;
+        width: 35%;
+        position: absolute;
+        top: 100px;
+        left: 30.5%;
+    }
+}

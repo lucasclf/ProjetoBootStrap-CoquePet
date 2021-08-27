@@ -1,0 +1,255 @@
+/* Estilos gerais */
+
+.container-fluid {
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0px;
+}
+
+.container {
+    padding: 70px 0 70px 0;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+main {
+    background-color: #f2f08a38;
+}
+
+.fa-bone {
+    color: #46A65F;
+}
+
+p, li {
+    color: #F2F08A;
+    font-size: 14px;
+}
+
+main li i {
+    margin-right: 15px;
+}
+
+main li {
+    line-height: 30px;
+    color: #444;
+}
+
+main p {
+    color: #444;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Barra de navegação */
+
+header, .navbar {
+    background-color: #6c336d;
+}
+
+.fa-bars{
+    color:#F2F08A;
+    border: solid 1px #F2F08A;
+    border-radius: 5px;
+    font-size:28px;
+    padding: 5px;
+}
+
+#nav-container {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #F2F08A;
+}
+
+.navbar-brand:hover {
+    color: A6A456;
+}
+
+#navbar-links a {
+    color: #F2F08A;
+}
+
+#navbar-links a:hover {
+    color: #A6A456;
+}
+.navbar-expanded-lg .navbar-nav .nav-links {
+    padding: 1rem .8rem 1rem .8rem;
+}
+
+/* Botão voltar */
+
+#voltar{
+    position: fixed;
+    bottom: 220px;
+    right: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#voltar i {
+    font-size: 40px;
+    color: #A34DA5
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    background-color: #6c336d;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "footer-area"
+    "copyright"
+}
+
+.footer-area {
+    grid-area: "footer-area"
+}
+
+#copyright {
+    grid-area: "copyright"
+}
+
+.footer-area {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "contato endereco email";
+    margin-left: 20px;
+    text-align: center;
+}
+
+#contato{
+    grid-area: "contato"
+}
+
+#endereco{
+    grid-area: "endereco"
+}
+
+#email{
+    grid-area: "email"
+}
+
+#copyright {
+    text-align: center;
+    background-color: #333;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #F2F08A;
+    font-weight: bold;
+}
+
+#copyright a:hover {
+    color: #A34DA5;
+}
+
+.contact-box {
+    margin-bottom: 30px;
+}
+
+.contact-box i {
+    color: #222;
+    border: solid 1px #222;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+.contact-title {
+    font-weight: bold;
+    color: #f8f53a;
+}
+
+/* Responsividade footer e botão voltar */
+
+@media(max-width: 768px) {
+    .footer-area p, .footer-area i {
+        font-size: 14px;
+    }
+
+    .footer-area i {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    #copyright p {
+        font-size: 12px;
+    }
+
+    #voltar{
+        bottom: 220px;
+        right: 0px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    #voltar i{
+        font-size: 30px;
+    }
+    
+}
+
+@media(max-width: 426px) {
+    .footer-area p, .footer-area i {
+        font-size: 12px;
+    }
+
+    .footer-area i {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    #copyright p {
+        font-size: 12px;
+    }
+    
+    .contact-title {
+        display: block;
+    }
+
+    #voltar i {
+        display:none
+    }
+}

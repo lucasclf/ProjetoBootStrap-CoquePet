@@ -1,0 +1,84 @@
+/* Sobre Nós */
+
+#area-sobrenos {
+    margin-top: 50px;
+}
+
+#imagem-sobrenos {
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.circle-box {
+    padding: 20px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: purple -1px -1px;
+}
+  
+#data-area p {
+    color: #F2F08A;
+    text-shadow: purple -1px -1px;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    ;
+}
+
+#data-area {
+    margin-bottom: 50px;
+}
+
+/* Responsividade */
+
+@media(max-width: 768px) {
+
+    .main-title::after {
+        width: 35%;
+        left: 32.5%;
+    }
+
+    .container {
+      padding: 20px 0;
+    }
+    
+    .circle-box {
+        padding: 0 10px;
+    }
+
+    #data-area p {
+        font-size: 18px;
+    }
+
+    #area-sobrenos {
+        margin-top: 100px;
+    }
+
+    .circle-box {
+        padding: 10px;
+    }
+
+}
+
+@media(max-width: 426px) {
+
+    .main-title::after {
+        width: 55%;
+        left: 22.5%;
+    }
+
+    #imagem-sobrenos {
+        margin-bottom: 30px;
+    }
+
+    .circle-box {
+        width: 50%;
+    }
+}

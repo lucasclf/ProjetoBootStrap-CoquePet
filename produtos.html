@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Indice dos requisitos:
+    1 Jquery : Botão de voltar vinculado ao Scroll.
+    2 JavaScript: validações.
+    3 CSS: Estilizar o rodapé usando exclusivamente css.
+    4 HTML: Utilizar <aside>.
+    * HTML: Utilizar <article>/utilizado na linha 43, barra de navegação e outras.
+    6 BootStrap: Layout responsivo usando grid.
+    7 BootStrap: Formulário. 
+    8 BootStrap: Menu dropdown/nav-bar responsivo.
+    9 BootStrap: Estilo nos botões e texto.
+    10 Requisitos gerais: De 4 a 6 páginas, sendo obrigatórias Pagina inicial, Quem somos/Sobre Nós, Formulário, Parceiros ou Serviços.
+    11 Requisitos gerais: Utilizar paleta de cores do cliente.
+    12 Requisitos gerais: Utilizar logo e imagens do cliente.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoquePet - carinho pelo seu pet.</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- Fonte Roboto -->
+    <link rel="stylesheet" href="./libs/roboto.css">
+    <!-- Estilo próprio -->
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/produtos.css">
+</head>
+
+<body>
+    <!-- Inicio do header -->
+    <header>
+        <!-- Inicio da barra de navegação -->
+        <section class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./img/cqn-brand3.png" alt="CoquePet" id="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <article class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <article class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="sobrenos.html" class="nav-item nav-link">Sobre Nós</a>
+                        <a href="produtos.html" class="nav-item nav-link">Produtos</a>
+                        <a href="servicos.html" class="nav-item nav-link">Serviços</a>
+                        <a href="cadastro.html" class="nav-item nav-link">Login</a>
+                    </article>
+                </article>
+            </nav>
+        </section>
+        <!-- Fim da barra de navegação -->
+    </header>
+    <!-- Fim do header -->
+    <!-- Inicio do main -->
+    <main>
+        <section class="container-fluid">
+            <section class="row">
+                <aside class="col-1">
+                    <i class="sidebar-icon d-block">a</i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                    <i class="sidebar-icon d-block"></i>
+                </aside>
+                <section id="teste col-11">
+                    
+                </section>
+            </section>
+        </section>
+        <!-- Inicio do botão de voltar -->
+        <a href="#top" id="voltar"><i class="fas fa-arrow-circle-up"></i></a>
+        <!-- Fim do botão de voltar -->
+    </main>
+    <!-- Fim do main -->
+    <!-- Inicio do footer -->
+    <footer>
+        <section class="footer-area">
+            <article class="contact-box" id="contato">
+                <i class="fas fa-phone"></i>
+                <p><span class="contact-title">Ligue para:</span> (11)91234-5678</p>
+                <p><span class="contact-title">Horario:</span> 09:00 - 22:00</p>
+            </article>
+            <article class="contact-box" id="endereco">
+                <i class="fas fa-map-marked-alt"></i>
+                <p><span class="contact-title">Nos visite:</span> Rua Lorem, ipsum dolor. S/N</p>
+            </article>
+            <article class="contact-box" id="email">
+                <i class="fas fa-at"></i>
+                <p><span class="contact-title">Envie um e-mail:</span> contato@cqn.com.br</p>
+            </article>
+        </section>
+        <section id="copyright">
+            <p>Desenvolvido por <a href="https://github.com/lucasclf">Agência Cqn</a> &copy; 2021</p>
+        </section>
+    </footer>
+    <!-- Fim do footer -->
+    <!-- jQuery -->
+    <script src="./libs/jquery-3.6.0.js"></script>
+    <!-- Popper e BootStrap-->
+    <script src="./libs/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ProgressionBar -->
+    <script src="./libs/progressbar.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="./libs/fontawesome.bf7e05c402.js"></script>
+    <!-- Parallax -->
+    <script src="./libs/parallax.js"></script>
+    <!-- Script próprio -->
+    <script src="./js/geral.js"></script>
+    <script src="./js/produtos.js"></script>
+</body>
+
+</html>

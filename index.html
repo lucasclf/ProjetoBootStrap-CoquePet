@@ -3,18 +3,18 @@
 
 <head>
     <!-- Indice dos requisitos:
-    1 Jquery : Botão de voltar vinculado ao Scroll.
+    * Jquery : Botão de voltar vinculado ao Scroll, todas as páginas com scroll possuem o botão de voltar.
     2 JavaScript: validações.
-    3 CSS: Estilizar o rodapé usando exclusivamente css.
+    * CSS: Estilizar o rodapé usando exclusivamente css.
     4 HTML: Utilizar <aside>.
-    * HTML: Utilizar <article>/utilizado na linha 39, barra de navegação e outras.
-    6 BootStrap: Layout responsivo usando grid.
+    * HTML: Utilizar <article>/utilizado na linha 43, barra de navegação e outras.
+    * BootStrap: Layout responsivo usando grid, o site inteiro utiliza grid, seja do bootstrap, seja do CSS(footer) e está responsivo para PC, tablet e celular.
     7 BootStrap: Formulário. 
-    8 BootStrap: Menu dropdown/nav-bar responsivo.
+    * BootStrap: Menu dropdown/nav-bar responsivo, o menu é responsivo e nas versões mobile vira dropdown.
     9 BootStrap: Estilo nos botões e texto.
     10 Requisitos gerais: De 4 a 6 páginas, sendo obrigatórias Pagina inicial, Quem somos/Sobre Nós, Formulário, Parceiros ou Serviços.
-    11 Requisitos gerais: Utilizar paleta de cores do cliente.
-    12 Requisitos gerais: Utilizar logo e imagens do cliente.-->
+    * Requisitos gerais: Utilizar paleta de cores do cliente.
+    * Requisitos gerais: Utilizar logo e imagens do cliente.-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,8 @@
     <!-- Fonte Roboto -->
     <link rel="stylesheet" href="./libs/roboto.css">
     <!-- Estilo próprio -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                     <img src="./img/cqn-brand3.png" alt="CoquePet" id="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-				aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <i class="fas fa-bars"></i>
                 </button>
                 <article class="collapse navbar-collapse justify-content-end" id="navbar-links">
@@ -58,7 +59,7 @@
     <main>
         <section class="container-fluid">
             <!-- Inicio do carrossel -->
-            <section class="carousel slide" id="mainSlider" data-ride="carousel">
+            <section id="mainSlider" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
                     <li data-target="#mainSlider" data-slide-to="1"></li>
@@ -73,7 +74,7 @@
                 <article class="carousel-inner">
                     <article class="carousel-item active">
                         <img src="./img/carrossel/cqn-banner0.webp" class="d-block w-100" alt="Saiba mais sobre nós.">
-                        <article class="carousel-caption d-none d-md-block">
+                        <article class="carousel-caption d-md-block">
                             <h2>Venha nos conhecer.</h2>
                             <p>Somos mais do que uma loja de artigos para pet.</p>
                             <a href="sobrenos.html" class="main-btn"> Cique aqui!</a>
@@ -82,7 +83,7 @@
                     <article class="carousel-item">
                         <img src="./img/carrossel/cqn-banner1.webp" class="d-block w-100"
                             alt="Serviços de cuidado de pets.">
-                        <article class="carousel-caption d-none d-md-block">
+                        <article class="carousel-caption d-md-block">
                             <h2>Seu pet merece.</h2>
                             <p>Venha conhecer nossos serviços de cuidados com o seu pet.</p>
                             <a href="servicos.html" class="main-btn"> Venha conferir!</a>
@@ -99,7 +100,7 @@
                     </article>
                     <article class="carousel-item">
                         <img src="./img/carrossel/cqn-banner3.webp" class="d-block w-100" alt="Saiba mais sobre nós">
-                        <article class="carousel-caption d-none d-md-block">
+                        <article class="carousel-caption d-md-block">
                             <h2>Venha nos conhecer.</h2>
                             <p>Somos mais do que uma loja de artigos para pet.</p>
                             <a href="sobrenos.html" class="main-btn"> Cique aqui!</a>
@@ -108,7 +109,7 @@
                     <article class="carousel-item">
                         <img src="./img/carrossel/cqn-banner4.webp" class="d-block w-100"
                             alt="Serviços de cuidado de pets.">
-                        <article class="carousel-caption d-none d-md-block">
+                        <article class="carousel-caption d-md-block">
                             <h2>Seu pet merece.</h2>
                             <p>Venha conhecer nossos serviços de cuidados com o seu pet.</p>
                             <a href="servicos.html" class="main-btn"> Venha conferir!</a>
@@ -117,15 +118,15 @@
                     <article class="carousel-item">
                         <img src="./img/carrossel/cqn-banner5.webp" class="d-block w-100"
                             alt="Produtos para o seu pet.">
-                        <article class="carousel-caption d-none d-md-block">
+                        <article class="carousel-caption d-md-block">
                             <h2>Procurando algo para o seu pet?</h2>
                             <p>Temos a maior variedade de rações e acessórios do mercado.</p>
                             <a href="produtos.html" class="main-btn"> Venha conferir!</a>
                         </article>
                     </article>
                     <article class="carousel-item">
-                        <img src="./img/carrosselg/cqn-banner6.webp" class="d-block w-100" alt="Saiba mais sobre nós">
-                        <article class="carousel-caption d-none d-md-block">
+                        <img src="./img/carrossel/cqn-banner6.webp" class="d-block w-100" alt="Saiba mais sobre nós">
+                        <article class="carousel-caption d-md-block">
                             <h2>Venha nos conhecer.</h2>
                             <p>Somos mais do que uma loja de artigos para pet.</p>
                             <a href="sobrenos.html" class="main-btn"> Cique aqui!</a>
@@ -134,7 +135,7 @@
                     <article class="carousel-item">
                         <img src="./img/carrossel/cqn-banner7.webp" class="d-block w-100"
                             alt="Serviços de cuidado de pets">
-                        <article class="carousel-caption d-none d-md-block">
+                        <article class="carousel-caption d-md-block">
                             <h2>Seu pet merece.</h2>
                             <p>Venha conhecer nossos serviços de cuidados com o seu pet.</p>
                             <a href="servicos.html" class="main-btn"> Venha conferir!</a>
@@ -143,7 +144,7 @@
                     <article class="carousel-item">
                         <img src="./img/carrossel/cqn-banner8.webp" class="d-block w-100"
                             alt="Produtos para o seu pet.">
-                        <article class="carousel-caption d-none d-md-block">
+                        <article class="carousel-caption d-md-block">
                             <h2>Procurando algo para o seu pet?</h2>
                             <p>Temos a maior variedade de rações e acessórios do mercado.</p>
                             <a href="produtos.html" class="main-btn"> Venha conferir!</a>
@@ -191,17 +192,23 @@
                             <h3 class="promocao-titulo">DESCONTO DE 30% NOS SERVIÇOS DE SPA.</h3>
                             <p>Nossa área de Spa está pronta para receber seus pets.</p>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, suscipit?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, suscipit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum reiciendis fugiat repellat tenetur quisquam nulla animi perferendis nesciunt asperiores quae, atque similique non vel molestias natus dolor quasi, incidunt aliquam.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, suscipit? Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Cum reiciendis fugiat repellat tenetur
+                                quisquam nulla animi perferendis nesciunt asperiores quae, atque similique non vel
+                                molestias natus dolor quasi, incidunt aliquam.</p>
                             <p>Os melhores produtos e técnicas mais avançadas para trazer conforto e relaxamento.</p>
                             <p>Venha nos visitar e assista aos seus pequeninos serem mimados e cuidados por nós.</p>
                         </article>
                         <article class="col-md-6">
-                            <img src="./img/Produtos/banho.webp" alt="Coleira" class="img-fluid">
+                            <img src="./img/Produtos/spa.webp" alt="Coleira" class="img-fluid">
                         </article>
                     </article>
                 </article>
             </section>
         </section>
+    <!-- Inicio do botão de voltar -->    
+        <a href="#top" id="voltar"><i class="fas fa-arrow-circle-up"></i></a>
+    <!-- Fim do botão de voltar -->
     </main>
     <!-- Fim do main -->
     <!-- Inicio do footer -->
@@ -237,7 +244,7 @@
     <!-- Parallax -->
     <script src="./libs/parallax.js"></script>
     <!-- Script próprio -->
-    <script src="./js/script.js"></script>
+    <script src="./js/geral.js"></script>
 </body>
 
 </html>
