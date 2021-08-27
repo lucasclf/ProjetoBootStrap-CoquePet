@@ -1,0 +1,20 @@
+/* Gerais */
+
+main {
+    margin-top: 105px;
+}
+
+.table {
+    text-align: center;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+#setembro {
+    display: none;
+}

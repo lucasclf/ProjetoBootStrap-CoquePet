@@ -25,6 +25,8 @@ aside article {
     cursor: pointer;
 }
 
+/* Cards */
+
 .card-body {
     text-align: center;
 
@@ -54,6 +56,64 @@ aside article {
     margin-bottom: 40px;
 }
 
+.produto-esquerda {
+    margin-left: 50px;
+}
+
+.produto-centro {
+    margin: 0 40px;
+}
+
 .produto-dragao {
     display: none
+}
+
+/* Responsividade */
+
+@media(max-width: 976px) {
+    /* Sidebar */
+    
+    aside article small {
+        margin-left: 30px;
+    }
+
+    /* Cards */
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-body button {
+        display: block;
+        transform: scale(0.8);
+        margin-left: 15px;
+    }
+
+    .card-text {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        margin-right: 23px;
+    }
+}
+
+@media(max-width: 762px) {
+    
+    aside {
+        display:none
+    }
+
+    .produto {
+        margin: 0px 0px 40px 50px;
+    }
+
+    .main-title {
+        left: 8%;
+    }
+
+  .main-title::after {
+    width: 35%;
+    left: 32.5%;
+}
+
 }
