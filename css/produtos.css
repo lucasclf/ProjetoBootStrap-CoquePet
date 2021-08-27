@@ -1,15 +1,59 @@
-#teste{
-    margin-top: 100px;
-    height: 90vh;
-    background-color: aqua;
+/* Gerais */
+
+main {
+    margin-top: 105px;
 }
 
+.main-title {
+    margin-top: 10px;
+}
+
+/* Aside */
+
 aside {
+    text-align: center;
     margin-top: 100px;
-    height: 90vh;
-    background-color: blueviolet;
 }
 
 aside i {
-    margin-top: 30px;
+    font-size: 30px;
+    padding: 30px 30px 0 30px;
+
+}
+
+aside article {
+    cursor: pointer;
+}
+
+.card-body {
+    text-align: center;
+
+}
+
+.card {
+    border: none;
+    background-color: #f2f08a38;
+}
+
+.card-body button {
+    margin-top: 10px;
+    float: left;
+}
+
+.card-body small {
+    margin-top: 10px;
+    float: right;
+}
+
+.card-title {
+    text-align: center;
+    
+}
+
+.produto{
+    margin-bottom: 40px;
+}
+
+.produto-dragao {
+    display: none
 }
