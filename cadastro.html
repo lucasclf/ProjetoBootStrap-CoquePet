@@ -38,7 +38,7 @@
                     <img src="./img/cqn-brand3.png" alt="CoquePet" id="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-				aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <i class="fas fa-bars"></i>
                 </button>
                 <article class="collapse navbar-collapse justify-content-end" id="navbar-links">
@@ -47,7 +47,7 @@
                         <a href="sobrenos.html" class="nav-item nav-link">Sobre Nós</a>
                         <a href="produtos.html" class="nav-item nav-link">Produtos</a>
                         <a href="servicos.html" class="nav-item nav-link">Serviços</a>
-                        <a href="cadastro.html" class="nav-item nav-link">Login</a>
+                        <a href="login.html" class="nav-item nav-link">Login</a>
                     </article>
                 </article>
             </nav>
@@ -57,11 +57,92 @@
     <!-- Fim do header -->
     <!-- Inicio do main -->
     <main>
-        
-     <!-- Inicio do botão de voltar -->    
-     <a href="#top" id="voltar"><i class="fas fa-arrow-circle-up"></i></a>
-     <!-- Fim do botão de voltar -->
+        <section class="container">
+            <form class="form">
+                <article class="form-row">
+                    <small class="text-muted col-md-12 col-10 mx-md-0 mx-auto">Nome completo*</small>
+                    <input type="text" class="form-control col-md-12 col-10 mx-md-0 mx-auto" placeholder="Nome Sobrenome" id="nomeInput">
+                </article>
+                <article class="form-row">
+                    <small class="text-muted col-md-12 col-10 mx-md-0 mx-auto">E-mail*</small>
+                    <input type="text" class="form-control col-md-12 col-10 mx-md-0 mx-auto" id="email" placeholder="email@email.com">
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-10 ml-md-auto">DDD+Celular*</small>
+                            <input type="number" class="form-control col-1 offset-0 col-md-1 offset-md-2 ddd" placeholder="99">
+                            <input type="number" class="form-control col-md-6 col-10 telefone" placeholder="99999-9999">
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-10 ml-md-auto">DDD+Telefone</small>
+                            <input type="number" class="form-control ddd telefone col-1 col-md-1 offset-md-2" placeholder="99" class="ddd">
+                            <input type="number" class="form-control col-md-6 col-10" placeholder="99999-9999">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto" >CPF*</small>
+                            <input type="text" class="form-control col-md-8 mx-md-auto" id="cpf" placeholder="123.456.789-10">
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto">Data de nascimento*</small>
+                            <input type="date" id="nasc" class="form-control col-md-8 mx-md-auto" placeholder="11/11/1980">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto">Genêro*</small>
+                            <select class="custom-select col-md-8 mx-md-auto" name="genero" id="genero">
+                                <option value="branco" id="branco"></option>
+                                <option value="f">Feminino</option>
+                                <option value="m">Masculino</option>
+                                <option value="o">Outro:</option>
+                            </select>
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto qual">Qual</small>
+                            <input type="text" class="form-control qual col-md-8 mx-md-auto">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto">Senha*</small>
+                            <input type="password" class="form-control col-md-8 mx-md-auto" id="senha">
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-md-8 mx-md-auto col-12">Confirmar senha*</small>
+                            <input type="password" class="form-control col-md-8 mx-md-auto" id="confirmar-senha">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-1 mt-md-5 col-3 mx-md-auto mt-5 mx-auto">
+                        <button class="btn btn-info">ENVIAR</small>
+                    </article>
+                </article>
+            </form>
+        </section>
+        <!-- Inicio do botão de voltar -->
+        <i class="fas fa-arrow-circle-up" id="voltar"></i>
+        <!-- Fim do botão de voltar -->
     </main>
+
+
     <!-- Fim do main -->
     <!-- Inicio do footer -->
     <footer>

@@ -1,0 +1,104 @@
+main {
+    margin-top: 105px;
+}
+
+#login-area {
+    margin-right: 80px;
+}
+
+#cadastro-area {
+    margin-left: 80px;
+}
+
+#cadastro {
+    text-align: center;
+}
+
+.input-login {
+    border-radius: 20px;
+    border: solid 1px #A34DA5;
+    box-sizing: border-box;
+    width: 90%;
+    height: 40px;
+}
+
+.input-senha {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: solid 1px #A34DA5;
+    display: inline;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+}
+
+.btn-login {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: solid 1px #A34DA5;
+    background-color: #A34DA5;
+    box-sizing: border-box;
+    color: #F2F08A;
+    height: 40px;
+    margin-left: -10px;
+    position: absolute;
+}
+
+#linha-login {
+    margin-top: 30px;
+}
+
+.cta p {
+    font-size: 18px;
+    text-align: justify;
+    font-variant: small-caps;
+}
+
+#versao-curta {
+    display: none;
+}
+
+#login-area-curta {
+    margin-bottom: 50px;
+}
+
+#cadastro-area-curta {
+    margin-top: 30px;
+}
+
+@media(max-width: 768px) {
+    
+    #login-area {
+        margin-right: 30px;
+    }
+
+    #cadastro-area {
+        margin-left: 30px;
+    }
+    
+    .main-title {
+        font-size: 30px;
+    }
+
+    #cta p {
+        font-size: 16px;
+    }
+
+    #btn-login {
+        margin-left: -33px;
+    }
+}
+
+@media(max-width: 426px) {
+    #login-area {
+        width: 400px;
+    }
+
+    #versao-padrao {
+        display: none;
+    }
+
+    #versao-curta {
+        display: block;
+    }
+}

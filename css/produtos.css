@@ -111,9 +111,4 @@ aside article {
         left: 8%;
     }
 
-  .main-title::after {
-    width: 35%;
-    left: 32.5%;
-}
-
 }

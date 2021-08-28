@@ -47,7 +47,7 @@
                         <a href="sobrenos.html" class="nav-item nav-link">Sobre Nós</a>
                         <a href="produtos.html" class="nav-item nav-link">Produtos</a>
                         <a href="servicos.html" class="nav-item nav-link">Serviços</a>
-                        <a href="cadastro.html" class="nav-item nav-link">Login</a>
+                        <a href="login.html" class="nav-item nav-link">Login</a>
                     </article>
                 </article>
             </nav>
@@ -57,17 +57,59 @@
     <!-- Fim do header -->
     <!-- Inicio do main -->
     <main>
-        <section class="container-fluid">
+        <section class="container">
+            <article id="servicos-prestados">
+                <article class="row">
+                    <article class="col-12">
+                        <h3 class="main-title">
+                            Nossas especialidades.
+                        </h3>
+                    </article>
+                    <article class="col-4 service-box">
+                        <i class="fas fa-toilet"></i>
+                        <h4>Aulas de adestramento</h4>
+                        <p>Aulas de adestramento particular, com interação com outros animais.</p>
+                    </article>
+                    <article class="col-4 service-box">
+                        <i class="fas fa-hot-tub"></i>
+                        <h4>Spa de relaxamento</h4>
+                        <p>Hidratação e relaxamento completo para o seu bichinho.</p>
+                    </article>
+                    <article class="col-4 service-box">
+                        <i class="fas fa-school"></i>
+                        <h4>Hotel para cachorro</h4>
+                        <p>Precisa viajar, venha conhecer nosso hotel para cachorros.</p>
+                    </article>
+                    <article class="col-4 service-box">
+                        <i class="fas fa-cat"></i>
+                        <h4>Catsitter</h4>
+                        <p>Vai se ausentar e precisa que alguem cuide do seu gatinho? Prestamos esse serviço.</p>
+                    </article>
+                    <article class="col-4 service-box">
+                        <i class="fas fa-comment-medical"></i>
+                        <h4>Veterinário</h4>
+                        <p>Nossos profissionais estão disponiveis 24 horas em plantão de urgência, para você.</p>
+                    </article>
+                    <article class="col-4 service-box">
+                        <i class="fas fa-cut"></i>
+                        <h4>Banho e tosa</h4>
+                        <p>Agende on-line um horário para o seu bichinho.</p>
+                        <small class="text-muted"><button class="btn btn-outline-info btn-sm agosto">Clique aqui</button></small>
+                    </article>
+                </article>
+            </article>
+        </section>
+        <section class="container">
+            <!-- Inicio Agosto -->
             <section class="row">
-            </section>
-            <section class="row">
-                <article class="col-8 mx-auto" id="agosto">
-                    <table class="table table-bordered table-info">
+                <article class="col-12" id="agosto">
+                    <table class="table table-bordered table-info ">
                         <thead>
                             <tr class="thead-light">
-                                <th colspan="7">AGOSTO</th>
+                                <th colspan="6">AGOSTO</th>
+                                <th><button class="btn btn-outline-dark btn-sm fechar-agosto">X</button></th>
                             </tr>
-                            <tr  class="thead-dark">
+                            <tr class="thead-dark">
                                 <th>Domingo</th>
                                 <th>Segunda</th>
                                 <th>Terça</th>
@@ -118,21 +160,26 @@
                                 <td class="table-danger">29</td>
                                 <td class="table-danger">30</td>
                                 <td class="bg-success">31</td>
-                                <td class="text-muted">01</td>
-                                <td class="text-muted">02</td>
-                                <td class="text-muted">03</td>
-                                <td class="text-muted">04</td>
+                                <td class="text-muted setembro">01</td>
+                                <td class="text-muted setembro">02</td>
+                                <td class="text-muted setembro">03</td>
+                                <td class="text-muted setembro">04</td>
                             </tr>
                         </tbody>
                     </table>
                 </article>
-                <article class="col-8 mx-auto" id="setembro">
-                    <table class="table table-bordered agosto table-info">
+            </section>
+            <!-- Fim Agosto -->
+            <!-- Inicio Setembro -->
+            <section class="row">
+                <article class="col-12" id="setembro">
+                    <table class="table table-bordered table-info">
                         <thead>
                             <tr class="thead-light">
-                                <th colspan="7">SETEMBRO</th>
+                                <th colspan="6">SETEMBRO</th>
+                                <th><button class="btn btn-outline-dark btn-sm fechar-setembro">X</button></th>
                             </tr>
-                            <tr  class="thead-dark">
+                            <tr class="thead-dark">
                                 <th>Domingo</th>
                                 <th>Segunda</th>
                                 <th>Terça</th>
@@ -144,9 +191,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-muted">29</td>
-                                <td class="text-muted">30</td>
-                                <td class="text-muted">31</td>
+                                <td class="text-muted voltar">29</td>
+                                <td class="text-muted voltar">30</td>
+                                <td class="text-muted voltar">31</td>
                                 <td class="bg-success">01</td>
                                 <td class="bg-danger">02</td>
                                 <td class="bg-success">03</td>
@@ -161,7 +208,7 @@
                                 <td class="bg-success">10</td>
                                 <td class="bg-success">11</td>
                             </tr>
-                            <tr >
+                            <tr>
                                 <td class="bg-danger">12</td>
                                 <td class="bg-success">13</td>
                                 <td class="bg-success">14</td>
@@ -192,9 +239,11 @@
                     </table>
                 </article>
             </section>
+            <!-- Fim Setembro -->
+        </section>
         </section>
         <!-- Inicio do botão de voltar -->
-        <a href="#top" id="voltar"><i class="fas fa-arrow-circle-up"></i></a>
+        <i class="fas fa-arrow-circle-up" id="voltar"></i>
         <!-- Fim do botão de voltar -->
     </main>
     <!-- Fim do main -->

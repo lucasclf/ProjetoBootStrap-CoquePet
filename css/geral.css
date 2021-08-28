@@ -23,14 +23,6 @@ body {
     text-align: center;
 }
 
-.main-title::after {
-    content: "";
-    border-top: 2px solid #333;
-    width: 15%;
-    position: absolute;
-    top: 60px;
-    left: 42.5%;
-}
 
 main {
     background-color: #f2f08a38;
@@ -113,7 +105,7 @@ header, .navbar {
     padding: 5px;
 }
 
-#voltar i {
+#voltar {
     font-size: 40px;
     color: #A34DA5
 }

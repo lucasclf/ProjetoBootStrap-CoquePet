@@ -1,6 +1,8 @@
 $(document).ready(function () {
 // VOLTAR AO TOPO
 
+    var topo = $("#mainSlider")
+
     if ($(window).scrollTop() > 399){
         $("#voltar").show();
     } else {
@@ -8,11 +10,16 @@ $(document).ready(function () {
     }
     
     window.addEventListener("scroll", function () {
-            console.log($(window).scrollTop())
         if ($(window).scrollTop() > 399){
             $("#voltar").show();
         } else {
             $("#voltar").hide();
         }
     });
+
+    $("#voltar").click( function(){
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(topo).offset().top - 70},
+            1500)
+    })
 });
