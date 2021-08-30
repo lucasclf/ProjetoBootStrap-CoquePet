@@ -1,5 +1,9 @@
 /* Estilos gerais */
 
+main p {
+    font-size: 18px;
+}
+
 .container-fluid {
     padding: 0;
 }
