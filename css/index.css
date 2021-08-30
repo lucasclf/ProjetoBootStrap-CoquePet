@@ -66,6 +66,10 @@
     border-top-right-radius: 20%;
 }
 
+main p {
+  text-align: justify;
+}
+
 @media(max-width: 768px) {
     /* geral */
     .container {

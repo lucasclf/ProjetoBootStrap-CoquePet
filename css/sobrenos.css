@@ -36,6 +36,9 @@
     margin-bottom: 50px;
 }
 
+main p {
+    text-align: justify;
+}
 /* Responsividade */
 
 @media(max-width: 768px) {
