@@ -21,6 +21,11 @@ $(document).ready(function () {
         if ((tecla >= "48") && (tecla <= "57")) {
             return false;
         }
+
+    })
+
+    $("#nomeInput").blur(function () {
+        $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px red" })
     })
 
     /* Exigência de @ no input e-mail*/
@@ -49,6 +54,14 @@ $(document).ready(function () {
         }
     })
 
+    $(".ddd").blur(function () {
+        if($(this).val() == "") {
+            $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+        } else {
+            $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px red" })
+        }
+    })
+
     /* Limite de 9 caracteres no input telefone*/
 
     $(".telefone").keypress(function () {
@@ -61,6 +74,14 @@ $(document).ready(function () {
             return true;
         }
 
+    })
+
+    $(".telefone").blur(function () {
+        if($(this).val() == "") {
+            $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+        } else {
+            $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px red" })
+        }
     })
 
     /* Validação de CPF */
@@ -130,12 +151,15 @@ $(document).ready(function () {
     $("#genero").change(function () {
         var genero = $(this).val()
 
+        $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px green" })
+
         if (genero == "o") {
             $(".qual").show()
         } else {
             $(".qual").hide()
         }
     })
+    
     /* Validação de confirmação de senha igual a senha */
 
     $("#senha").on("input", function () {
@@ -148,8 +172,25 @@ $(document).ready(function () {
 
         } else if (senha != confirmarSenha) {
             $("#confirmar-senha").css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+            $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
         } else if (senha == confirmarSenha) {
             $("#confirmar-senha").css({ border: "green solid 3px", boxshadow: "0px 0px 4px green" })
+            $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px red" })
+        }
+    })
+
+    $("#senha").blur(function () {
+        var senha = $(this).val()
+        var confirmarSenha = $("#confirmar-senha").val()
+
+        if (senha != confirmarSenha) {
+            $("#confirmar-senha").css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+            $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+        } else if($(this).val() == "") {
+            $("#confirmar-senha").css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+            $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+        } else {
+            $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px red" })
         }
     })
 
@@ -157,12 +198,19 @@ $(document).ready(function () {
         var confirmarSenha = $(this).val()
         var senha = $("#senha").val()
         console.log("senha", confirmarSenha, "senha2", senha)
-        if (confirmarSenha != senha) {
+        
+        if ($(this).val() == "") {
             $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+            $("#senha").css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+        } else if (confirmarSenha != senha) {
+            $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
+            $("#senha").css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" })
         } else {
             $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px green" })
-
+            $("#senha").css({ border: "green solid 3px", boxshadow: "0px 0px 4px green" })
         }
     })
+
+    /* Botão enviar */
 
 })

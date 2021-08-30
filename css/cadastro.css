@@ -2,6 +2,12 @@ main {
     margin-top: 105px;
 }
 
+#nomeInput, #email, .telefone, .ddd, #cpf, #nasc, #genero, #qual, #senha, #confirmar-senha {
+  border-radius: 20px;
+  border: solid 1px #A34DA5;
+  box-sizing: border-box;
+}
+
 #branco, .qual {
   display: none;
 }

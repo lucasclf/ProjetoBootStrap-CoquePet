@@ -57,9 +57,10 @@
     <!-- Fim do header -->
     <!-- Inicio do main -->
     <main>
+        <article id="topo"></article>
         <section class="container-fluid">
             <!-- Inicio do carrossel -->
-            <section id="mainSlider" class="carousel slide" data-ride="carousel">
+            <section id="mainSlider" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
                     <li data-target="#mainSlider" data-slide-to="1"></li>
@@ -209,6 +210,18 @@
     <!-- Inicio do botão de voltar -->    
         <i id="voltar" class="fas fa-arrow-circle-up"></i>
     <!-- Fim do botão de voltar -->
+    <aside> <!--Início LIBRAS-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+    </aside> <!--fim LIBRAS-->
     </main>
     <!-- Fim do main -->
     <!-- Inicio do footer -->

@@ -57,6 +57,7 @@
     <!-- Fim do header -->
     <!-- Inicio do main -->
     <main>
+        <article id="topo"></article>
         <section class="container">
             <form class="form">
                 <article class="form-row">
@@ -71,15 +72,15 @@
                     <article class="col-md-6 col-10 mx-md-0 mx-auto">
                         <article class="form-row align-items-center">
                             <small class="text-muted col-12 col-md-10 ml-md-auto">DDD+Celular*</small>
-                            <input type="number" class="form-control col-1 offset-0 col-md-1 offset-md-2 ddd" placeholder="99">
-                            <input type="number" class="form-control col-md-6 col-10 telefone" placeholder="99999-9999">
+                            <input type="number" class="form-control col-1 offset-0 col-md-1 offset-md-2 ddd" id="ddd-celular" placeholder="99">
+                            <input type="number" class="form-control col-md-6 col-10 telefone" id="celular" placeholder="99999-9999">
                         </article>
                     </article>
                     <article class="col-md-6 col-10 mx-md-0 mx-auto">
                         <article class="form-row align-items-center">
                             <small class="text-muted col-12 col-md-10 ml-md-auto">DDD+Telefone</small>
-                            <input type="number" class="form-control ddd telefone col-1 col-md-1 offset-md-2" placeholder="99" class="ddd">
-                            <input type="number" class="form-control col-md-6 col-10" placeholder="99999-9999">
+                            <input type="number" class="form-control ddd col-1 col-md-1 offset-md-2" placeholder="99" class="ddd">
+                            <input type="number" class="form-control col-md-6 col-10 telefone " placeholder="99999-9999">
                         </article>
                     </article>
                 </article>
@@ -112,7 +113,7 @@
                     <article class="col-md-6 col-10 mx-md-0 mx-auto">
                         <article class="form-row align-items-center">
                             <small class="text-muted col-12 col-md-8 mx-md-auto qual">Qual</small>
-                            <input type="text" class="form-control qual col-md-8 mx-md-auto">
+                            <input type="text" id="qual" class="form-control qual col-md-8 mx-md-auto">
                         </article>
                     </article>
                 </article>
@@ -132,7 +133,7 @@
                 </article>
                 <article class="form-row">
                     <article class="col-md-1 mt-md-5 col-3 mx-md-auto mt-5 mx-auto">
-                        <button class="btn btn-info">ENVIAR</small>
+                        <small class="btn btn-info" id="btn-enviar">ENVIAR</small>
                     </article>
                 </article>
             </form>
@@ -140,6 +141,18 @@
         <!-- Inicio do botão de voltar -->
         <i class="fas fa-arrow-circle-up" id="voltar"></i>
         <!-- Fim do botão de voltar -->
+        <aside> <!--Início LIBRAS-->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                    new window.VLibras.Widget('https://vlibras.gov.br/app');
+                </script>
+            </div>
+        </aside> <!--fim LIBRAS-->
     </main>
 
 

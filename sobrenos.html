@@ -57,6 +57,7 @@
     <!-- Fim do header -->
     <!-- Inicio do main -->
     <main>
+        <article id="topo"></article>
         <section class="container">
             <section id="area-sobrenos">
                 <article class="row">
@@ -120,6 +121,18 @@
                 </article>
             </article>
         </section>
+        <aside> <!--Início LIBRAS-->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                    new window.VLibras.Widget('https://vlibras.gov.br/app');
+                </script>
+            </div>
+        </aside> <!--fim LIBRAS-->
         <!-- Inicio do botão de voltar -->
         <i class="fas fa-arrow-circle-up" id="voltar"></i>
         <!-- Fim do botão de voltar -->

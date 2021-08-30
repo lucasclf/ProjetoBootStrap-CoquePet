@@ -165,17 +165,17 @@ footer {
 }
 
 .contact-box {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contact-box i {
     color: #222;
     border: solid 1px #222;
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
     margin-top: 20px;
 }
 

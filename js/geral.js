@@ -1,7 +1,7 @@
 $(document).ready(function () {
 // VOLTAR AO TOPO
 
-    var topo = $("#mainSlider")
+    var topo = $("#topo")
 
     if ($(window).scrollTop() > 399){
         $("#voltar").show();
